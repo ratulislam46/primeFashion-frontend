@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 
-
 const PageNotFount = () => {
     return (
         <div className="min-h-screen bg-base-200 flex flex-col items-center justify-center text-center p-6">
