@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router';
 
+const navbarLinks =
+    <>
+        <NavLink to='/' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</NavLink>
+        <NavLink to='/products' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Products</NavLink>
+        <NavLink to='/categories' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Categories</NavLink>
+        <NavLink to='/about' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</NavLink>
+        <NavLink to='/contact' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</NavLink>
+    </>
+
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,17 +23,13 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center">
+                    <div className="flex items-center">
                         <span className="font-bold text-xl text-indigo-600">PrimeFashion</span>
                     </div>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <NavLink to='/' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</NavLink>
-                        <NavLink href="#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Products</NavLink>
-                        <NavLink href="#" className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Categories</NavLink>
-                        <NavLink to='/about' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</NavLink>
-                        <NavLink to='/contact' className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</NavLink>
+                        {navbarLinks}
                     </div>
 
                     {/* Cart and User Actions */}
