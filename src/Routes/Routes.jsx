@@ -3,8 +3,7 @@ import RootLayout from "../Root/RootLayout";
 import Home from "../Page/Home/Home";
 import About from "../Page/About/About";
 import Contact from "../Page/Contact/Contact";
-import PageNotFount from "../Components/PageNotFount/PageNotFount";
-import Blogs from "../Page/Blogs/Blogs";
+import PageNotFount from "../Components/Error/PageNotFount";
 
 
 export const router = createBrowserRouter([
