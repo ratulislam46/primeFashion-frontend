@@ -4,6 +4,7 @@ import Home from "../Page/Home/Home";
 import About from "../Page/About/About";
 import Contact from "../Page/Contact/Contact";
 import PageNotFount from "../Components/Error/PageNotFount";
+import Product from "../Page/Products/Product";
 
 
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path:'/contact',
                 Component: Contact
+            },
+            {
+                path:'/products',
+                Component: Product
             }
         ]
     },
